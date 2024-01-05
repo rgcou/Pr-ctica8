@@ -1,0 +1,10 @@
+"""1. problema pertenece (in s:seq<Z>, in e: Z) : Bool {
+requiere: { True }
+asegura: { res = true ↔ (∃i : Z)(0 ≤ i < |s| → s[i] = e)}}"""
+
+def pertenece(s:list,e:int) -> Bool:
+  for i in s:
+    if e == s[i]:
+      return True
+    return False
+  
